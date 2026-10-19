@@ -110,4 +110,8 @@ See [docs/](docs/) for the full API reference and implementation notes.
 
 ## License
 
-GPL-3.0-or-later — see [`LICENSE`](LICENSE) for details.
+Copyright (C) 2024 Thomas Thiel
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. See [`LICENSE`](LICENSE) for the full text.
+
+The vendored Gpufit code and binaries are MIT-licensed — see [`pyneapple_gpufit/_vendor/VENDOR.md`](pyneapple_gpufit/_vendor/VENDOR.md).
