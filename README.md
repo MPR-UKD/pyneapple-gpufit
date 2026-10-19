@@ -1,6 +1,6 @@
 # pyneapple-gpufit
 
-> **TL;DR** — A [Pyneapple](https://github.com/darksim33/Pyneapple) plugin that provides GPU-accelerated curve fitting via a custom build of [Gpufit](https://github.com/darksim33/GPUfit). It registers two solvers (`gpufit_curvefit`, `gpufit_nnls`) into Pyneapple's entry-point system and bundles the native CUDA library inside the wheel — no separate toolkit installation required.
+> **TL;DR** — A [Pyneapple](https://github.com/MPR-UKD/Pyneapple) plugin that provides GPU-accelerated curve fitting via a custom build of [Gpufit](https://github.com/darksim33/GPUfit). It registers two solvers (`gpufit_curvefit`, `gpufit_nnls`) into Pyneapple's entry-point system and bundles the native CUDA library inside the wheel — no separate toolkit installation required.
 
 ---
 
@@ -8,16 +8,16 @@
 
 - Python ≥ 3.9
 - An NVIDIA GPU with a CUDA-compatible driver
-- [Pyneapple](https://github.com/darksim33/Pyneapple)
+- [Pyneapple](https://github.com/MPR-UKD/Pyneapple)
 
 ## Installation
 
 ```bash
 # pip
-pip install git+https://github.com/darksim33/pyneapple-gpufit.git
+pip install git+https://github.com/MPR-UKD/pyneapple-gpufit.git
 
 # uv
-uv add git+https://github.com/darksim33/pyneapple-gpufit
+uv add git+https://github.com/MPR-UKD/pyneapple-gpufit
 ```
 
 The wheel includes `Gpufit.dll` (Windows) and `libGpufit.so` (Linux). Only an up-to-date NVIDIA driver is needed — no CUDA toolkit. Currently the supplied libraries are only compiled for x86 systems. For other systems custom compiles are needed. For detailed instructions on how to compile [see](https://github.com/darksim33/GPUfit).
@@ -100,7 +100,7 @@ The CUDA kernels used by this plugin are adapted from [darksim33/GPUfit](https:/
 
 ```bash
 # clone and install in editable mode (requires uv)
-git clone https://github.com/darksim33/pyneapple-gpufit
+git clone https://github.com/MPR-UKD/pyneapple-gpufit
 cd pyneapple-gpufit
 uv sync --dev
 uv run pytest tests

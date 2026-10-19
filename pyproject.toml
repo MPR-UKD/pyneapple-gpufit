@@ -33,7 +33,7 @@ artifacts = [
 ]
 
 [tool.uv.sources]
-pyneapple = { git = "https://github.com/darksim33/Pyneapple.git", rev = "v2.0.0" }
+pyneapple = { git = "https://github.com/MPR-UKD/Pyneapple.git", rev = "v2.0.0" }
 
 [dependency-groups]
 dev = [
